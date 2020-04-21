@@ -1,0 +1,18 @@
+::ng-deep {
+    .table {
+        margin: 1rem;
+        width: 80%;
+    }
+    .name {
+        color: blue;
+        text-decoration: underline;
+    }
+    .name:hover {
+        cursor: pointer;
+    }
+}
+
+h1,
+p {
+    padding: 1rem;
+}

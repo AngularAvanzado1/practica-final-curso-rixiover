@@ -1,0 +1,20 @@
+<ab-ui-title [title]="'Listado de Paises por Región Continental'"></ab-ui-title>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Capital</th>
+            <th scope="col">Income Level</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of regionData">
+            <th scope="row">{{item.id}}</th>
+            <td class="name" (click)="goToCountry(item.id)">{{item.name}}</td>
+            <td>{{item.capitalCity}}</td>
+            <td>{{item.incomeLevel.value}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,8 @@
+<button (click)="goToHome()">Volver</button>
+
+<div class="favorites">
+    <p>Paises Favoritos Visitados </p>
+    <pre>{{ favoritesMethodsList$ | async | json }}</pre>
+</div>
+
+<button (click)="check()">check</button>

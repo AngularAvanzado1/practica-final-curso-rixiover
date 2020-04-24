@@ -18,6 +18,7 @@ import * as fromFavoritesMethod from './favorites/store/favorites-method/favorit
 import { FavoritesMethodEffects } from './favorites/store/favorites-method/favorites-method.effects';
 import { FavoritesMarkComponent } from './shared/favorites-mark/favorites-mark.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ServiceWorkerModule } from '@angular/service-worker';
     HomeComponent,
     RegionsComponent,
     CountriesComponent,
-    FavoritesMarkComponent
+    FavoritesMarkComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

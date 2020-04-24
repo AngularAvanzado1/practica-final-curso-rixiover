@@ -1,0 +1,12 @@
+<div class="card" *ngFor="let item of countryData">
+    <h5 class="card-header">{{item.name}}</h5>
+    <div class="card-body">
+        <h5 class="card-title">{{item.capitalCity}}</h5>
+        <p class="card-text">Nivel Económico: {{item.incomeLevel.value}} </p>
+        <p class="card-text">Longitud: {{item.longitude}}</p>
+        <p class="card-text">Latitud: {{item.latitude}}</p>
+        <button (click)="addToFavorites()" class="btn btn-success">Añadir a favoritos</button>
+        <br>
+        <button (click)="goToRegion(item.region.id)" class="btn btn-primary">Volver a la Región Continental</button>
+    </div>
+</div>

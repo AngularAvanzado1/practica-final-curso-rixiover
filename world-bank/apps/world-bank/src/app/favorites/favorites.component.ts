@@ -12,6 +12,7 @@ import { Observable } from 'rxjs';
 export class FavoritesComponent implements OnInit {
 
   public favoritesMethodsList$: Observable<FavoritesMethod[]>;
+  public favoritesCountries;
 
   constructor( private favoritesMethodService: FavoritesMethodService,
                private router: Router
@@ -20,7 +21,10 @@ export class FavoritesComponent implements OnInit {
   ngOnInit(): void {
 
       this.favoritesMethodsList$ = this.favoritesMethodService.getFavoritesMethodsList$();
-
+      this.favoritesMethodsList$.subscribe(data => {
+        console.log(data);
+        this.favoritesCountries = data;
+      })
 
   }
 

@@ -2,7 +2,7 @@
 
 <div class="favorites">
     <p>Paises Favoritos Visitados </p>
-    <pre>{{ favoritesMethodsList$ | async | json }}</pre>
+    <ol>
+        <li *ngFor="let item of favoritesCountries">{{ item.name }}</li>
+    </ol>
 </div>
-
-<button (click)="check()">check</button>

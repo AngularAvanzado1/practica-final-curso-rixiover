@@ -6,6 +6,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { UiModule } from '../../../../../../libs/shared/ui/src/lib/ui.module';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FavoritesMarkComponent } from '../../shared/favorites-mark/favorites-mark.component';
 
 describe('RegionsComponent', () => {
   let component: RegionsComponent;
@@ -13,7 +14,7 @@ describe('RegionsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent, RegionsComponent],
+      declarations: [AppComponent, RegionsComponent, FavoritesMarkComponent],
       imports: [
         BrowserModule,
         UiModule,

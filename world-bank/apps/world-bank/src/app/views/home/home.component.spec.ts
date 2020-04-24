@@ -8,6 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { UiModule } from '../../../../../../libs/shared/ui/src/lib/ui.module';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FavoritesMarkComponent } from '../../shared/favorites-mark/favorites-mark.component';
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
@@ -15,7 +16,7 @@ describe('HomeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent, HomeComponent],
+      declarations: [AppComponent, HomeComponent, FavoritesMarkComponent],
       imports: [
         BrowserModule,
         UiModule,
@@ -34,4 +35,6 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+
 });

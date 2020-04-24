@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FavoritesComponent } from './favorites.component';
+import { AppComponent } from '../app.component';
+import { FavoritesMarkComponent } from '../shared/favorites-mark/favorites-mark.component';
+import { GetInfoService } from '../services/get-info.service';
 
 describe('FavoritesComponent', () => {
   let component: FavoritesComponent;
@@ -8,7 +11,7 @@ describe('FavoritesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FavoritesComponent ]
+      declarations: [ FavoritesComponent, AppComponent, FavoritesMarkComponent, GetInfoService ]
     })
     .compileComponents();
   }));

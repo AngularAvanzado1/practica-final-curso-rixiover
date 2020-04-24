@@ -15,7 +15,11 @@ export class AppComponent implements OnInit {
 
   public favoritesMethodsList$: Observable<FavoritesMethod[]>;
 
-  constructor(private swUpdate: SwUpdate) { this.checkVersionUpdates();
+  constructor(
+    private swUpdate: SwUpdate
+    )
+     {
+      this.checkVersionUpdates();
   }
 
   ngOnInit(): void {

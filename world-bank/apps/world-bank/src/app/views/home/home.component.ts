@@ -12,6 +12,8 @@ import { FavoritesMethodService } from '../../favorites/store/favorites-method/f
 })
 export class HomeComponent implements OnInit {
 
+  title = 'home';
+
   public favoritesMethodsList$: Observable<FavoritesMethod[]>;
 
   regionData = [];

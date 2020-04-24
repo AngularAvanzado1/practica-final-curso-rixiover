@@ -7,16 +7,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { UiModule } from '../../../../libs/shared/ui/src/lib/ui.module';
+import { CardComponent } from './shared/card/card.component';
+import { FavoritesMarkComponent } from './shared/favorites-mark/favorites-mark.component';
+import { FavoritesComponent } from './favorites/favorites.component';
+import { SwUpdate } from '@angular/service-worker';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent, HomeComponent, RegionsComponent, CountriesComponent],
+      declarations: [AppComponent, HomeComponent, RegionsComponent, CountriesComponent, CardComponent, FavoritesMarkComponent, FavoritesComponent],
       imports: [
         BrowserModule,
         UiModule,
         RouterTestingModule,
         HttpClientTestingModule
+      ],
+      providers: [
+        SwUpdate,
       ]
     }).compileComponents();
   }));

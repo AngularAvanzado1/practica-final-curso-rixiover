@@ -6,6 +6,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { UiModule } from '../../../../../../libs/shared/ui/src/lib/ui.module';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FavoritesMarkComponent } from '../../shared/favorites-mark/favorites-mark.component';
+import { CardComponent } from '../../shared/card/card.component';
+import { Store, StateObservable } from '@ngrx/store';
 
 describe('CountriesComponent', () => {
   let component: CountriesComponent;
@@ -13,12 +16,16 @@ describe('CountriesComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent, CountriesComponent],
+      declarations: [AppComponent, CountriesComponent, FavoritesMarkComponent, CardComponent],
       imports: [
         BrowserModule,
         UiModule,
         RouterTestingModule,
         HttpClientTestingModule
+      ],
+      providers: [
+        Store,
+        StateObservable
       ]
     }).compileComponents();
   }));

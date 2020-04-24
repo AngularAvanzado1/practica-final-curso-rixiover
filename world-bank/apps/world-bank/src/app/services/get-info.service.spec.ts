@@ -6,13 +6,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { UiModule } from '../../../../../libs/shared/ui/src/lib/ui.module';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { FavoritesMarkComponent } from '../shared/favorites-mark/favorites-mark.component';
 
 describe('GetInfoService', () => {
   let service: GetInfoService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      declarations: [AppComponent, FavoritesMarkComponent],
       imports: [
         BrowserModule,
         UiModule,

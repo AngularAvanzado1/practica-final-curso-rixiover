@@ -43,7 +43,7 @@
     "@ngrx/entity": "9.0.0",
     "@ngrx/router-store": "9.0.0",
     "@ngrx/store": "9.0.0",
-    "@nrwl/angular": "9.2.2",
+    "@nrwl/angular": "15.4.2",
     "core-js": "^2.5.4",
     "rxjs": "~6.5.4",
     "zone.js": "^0.10.2"
@@ -55,7 +55,7 @@
     "@angular/language-service": "^9.1.0",
     "@ngrx/schematics": "9.0.0",
     "@ngrx/store-devtools": "9.0.0",
-    "@nrwl/cypress": "9.2.2",
+    "@nrwl/cypress": "15.4.2",
     "@nrwl/jest": "9.2.2",
     "@nrwl/workspace": "9.2.2",
     "@types/jest": "25.1.4",
